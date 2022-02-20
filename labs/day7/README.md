@@ -1,4 +1,4 @@
-**Web Exploitation: Migration Without Security**
+# Web Exploitation: Migration Without Security
 
 Author: Corbett Stephens
 Date: 12/21/2021
@@ -79,7 +79,7 @@ The next task is to find the flag using the mondo commands that I just learned. 
 >
 </pre>
 
-**Bypassing Login Pages!**
+## Bypassing Login Pages!
 
 Fire up Burp Suite. While Burp Suite is loading up try logging in to the web page with admin:pass. This does not work, however, I can use what I just learned about mongo to try to bypass the login. Navigating to the login POST request, it can be changed to be `username=admin&password[$ne]=pass`.
 
