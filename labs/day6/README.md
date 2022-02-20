@@ -1,4 +1,4 @@
-**Web Exploitation: Patch Management is Hard**
+# Web Exploitation: Patch Management is Hard
 
 Author: Corbett Stephens
 Date: 12/06/2021
@@ -25,7 +25,7 @@ For find the flag at '/etc/flag', I was already using the LFI method to get out 
 /var/www/html/index.php'. I could see that index.php is three layers deep into sub directories, so I changed my payload to `../../../etc/flag`. By doing this, the flag was printed to the screen. Just using 
 `/etc/flag` as the payload has the same affect.
 
-**Exploiting LFI**
+## Exploiting LFI
 
 When dealing with a PHP web application, the PHP-supported Wrappers can be useful in exploiting LFI. PHP filter can be used to display the content of PHP files in other encoding formats such as base64. By changing the payload to 'php://filter/convert.base64-encode/resource=index.php' the source code of index.php will be written to the screen in base64. The text can then be decoded from base64 where it can be easily readable. Encoding the web app response is important, otherwise, an error will be received in which the web server is trying to execute the the PHP code. 
 
