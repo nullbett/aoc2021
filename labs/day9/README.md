@@ -6,7 +6,7 @@ Date: 12/23/2021
 Objective:
 Learn to perform basic packet analysis using Wireshark.
 
-Host `10.10.10.5`
+Host `10.10.10.5` \
 Server `10.10.10.6`
 
 The first question asks what is the requested directory. To find this, the filter `http.request.method == GET` can be used. The top result will show that `/login` is the requested directory.
